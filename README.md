@@ -16,11 +16,4 @@ A three-page semantic HTML portfolio starter.
 - **Muted:** slate gray `#6B7280`
 - **Headings:** Poppins (or a similar sans-serif)
 - **Body:** Inter (or a similar sans-serif)
-
-No CSS is included yet, as requested. Replace placeholder project descriptions, email, and profile links with your own details.
-
-## Publish to GitHub
-1. Create a new repository on GitHub (for example, `personal-portfolio`).
-2. Upload these files and commit them to the repository.
-3. Copy the repository URL and submit it for your assignment.
-4. Optional: enable GitHub Pages in the repository settings to publish the site.
+- 
