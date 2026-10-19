@@ -1,165 +1,59 @@
+/* Austin Yates portfolio styles */
 :root {
-  --bg: #07090b;
-  --bg-elevated: #111417;
-  --panel: #171b20;
-  --panel-alt: #1d2229;
-  --text: #edf0f2;
-  --muted: #c3c7cc;
-  --silver: #b8bec5;
-  --silver-strong: #e5e7ea;
-  --line: rgba(191, 196, 201, 0.2);
-  --shadow: rgba(0, 0, 0, 0.32);
-  --link: #dfe4ea;
-  --link-hover: #ffffff;
+  --navy: #1E3A8A;
+  --blue: #60A5FA;
+  --page: #F1F5F9;
+  --text: #1F2937;
+  --white: #FFFFFF;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+* { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, rgba(180, 185, 191, 0.12), transparent 25%), var(--bg);
+  padding: 0;
+  background: var(--page);
   color: var(--text);
+  font-family: Inter, Arial, sans-serif;
   line-height: 1.6;
 }
-
 header {
-  background: rgba(17, 20, 23, 0.95);
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  backdrop-filter: blur(8px);
+  margin: 0;
+  padding: 1.5rem 8%;
+  background: var(--navy);
+  color: var(--white);
+  border-bottom: 5px solid var(--blue);
 }
-
-nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.1rem 1.5rem 0.9rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-}
-
+header h1 { margin: 1.25rem 0 0.25rem; font-family: Poppins, Arial, sans-serif; }
+nav { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 nav a {
-  color: var(--silver-strong);
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 0.5rem;
+  color: var(--white);
   text-decoration: none;
-  font-weight: 600;
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: all 0.2s ease;
+  font-weight: bold;
 }
-
-nav a:hover,
-nav a:focus-visible {
-  color: var(--link-hover);
-  border-color: var(--line);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-h1,
-h2,
-h3 {
-  color: var(--silver-strong);
-  line-height: 1.2;
-  margin-top: 0;
-}
-
-h1 {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.2rem 1.5rem 1.5rem;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
-}
-
+nav a:hover, nav a:focus { background: var(--blue); color: var(--navy); }
+main { width: min(100% - 2rem, 960px); margin: 2rem auto; }
 section {
-  background: linear-gradient(180deg, rgba(20, 24, 28, 0.96), rgba(14, 17, 20, 0.96));
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  box-shadow: 0 12px 24px var(--shadow);
-  padding: 1.6rem 1.5rem;
-  margin-bottom: 2rem;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid #CBD5E1;
+  border-left: 5px solid var(--blue);
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 16px rgba(30,58,138,.07);
 }
-
-section p,
-section li,
-section strong,
-section a {
-  color: var(--muted);
-}
-
-article {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1.2rem 1.1rem;
-  margin-top: 1rem;
-}
-
-article h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-}
-
-ul {
-  padding-left: 1.25rem;
-  margin: 0.75rem 0 0;
-}
-
-li + li {
-  margin-top: 0.45rem;
-}
-
-p {
-  margin: 0.75rem 0;
-}
-
-footer {
-  border-top: 1px solid var(--line);
-  background: rgba(12, 15, 18, 0.9);
-  color: var(--silver);
-}
-
-footer p {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem;
-}
-
-a {
-  color: var(--link);
-}
-
-a:hover,
-a:focus-visible {
-  color: var(--link-hover);
-}
-
+h2 { margin-top: 0; color: var(--navy); font-family: Poppins, Arial, sans-serif; }
+h3 { margin-bottom: .35rem; color: var(--navy); }
+p { margin: 0 0 1rem; }
+article { margin: 1rem 0; padding: 1rem; border: 1px solid #BFDBFE; border-radius: .5rem; background: #EFF6FF; }
+.project-link { color: var(--navy); font-weight: bold; }
+#intro-heading { padding-bottom: .5rem; border-bottom: 2px solid var(--blue); }
+a { color: #1D4ED8; }
+footer { margin-top: 2rem; padding: 1.25rem 8%; background: var(--navy); color: var(--white); text-align: center; }
+footer p { margin: 0; }
 @media (max-width: 600px) {
-  nav {
-    justify-content: center;
-  }
-
-  nav a {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-
-  main {
-    padding-top: 1.5rem;
-  }
+  header { padding: 1.25rem 1rem; }
+  main { width: min(100% - 1rem, 960px); margin: 1rem auto; }
+  section { padding: 1rem; }
 }
